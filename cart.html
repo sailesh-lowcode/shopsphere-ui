@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Cart — ShopSphere</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="topbar">Free shipping over $50 · 30-day returns · <strong>Spring sale: up to 40% off</strong></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo"><span class="logo-mark">S</span> Shop<span>Sphere</span></a>
+      <nav class="main-nav" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="shop.html">Deals</a>
+        <a href="product.html">Featured</a>
+      </nav>
+      <div class="header-actions">
+        <a href="#" class="icon-link" aria-label="Wishlist">♡</a>
+        <a href="cart.html" class="cart-link active" aria-label="View cart">🛒 <span class="cart-badge">3</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container section">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a> / <span>Cart</span></nav>
+    <h1 class="page-title">Your cart</h1>
+    <p class="page-sub">3 items — free shipping unlocked 🎉</p>
+
+    <div class="cart-layout">
+      <section class="cart-items" aria-label="Cart items">
+        <div class="cart-item">
+          <a class="cart-thumb t-1" href="product.html">🎧</a>
+          <div class="cart-item-info">
+            <h3><a href="product.html">SphereSound Pro Headphones</a></h3>
+            <p class="item-meta">Color: Midnight · In stock</p>
+            <div class="qty">
+              <button aria-label="Decrease quantity">−</button>
+              <span>1</span>
+              <button aria-label="Increase quantity">+</button>
+            </div>
+          </div>
+          <div class="cart-item-price"><strong>$89.99</strong> <s>$119.99</s></div>
+          <button class="remove" aria-label="Remove item">✕</button>
+        </div>
+
+        <div class="cart-item">
+          <a class="cart-thumb t-4" href="product.html">🎒</a>
+          <div class="cart-item-info">
+            <h3><a href="product.html">TrekDay Backpack 24L</a></h3>
+            <p class="item-meta">Color: Forest Green · In stock</p>
+            <div class="qty">
+              <button aria-label="Decrease quantity">−</button>
+              <span>1</span>
+              <button aria-label="Increase quantity">+</button>
+            </div>
+          </div>
+          <div class="cart-item-price"><strong>$59.99</strong></div>
+          <button class="remove" aria-label="Remove item">✕</button>
+        </div>
+
+        <div class="cart-item">
+          <a class="cart-thumb t-6" href="product.html">☕</a>
+          <div class="cart-item-info">
+            <h3><a href="product.html">BrewMaster Mug Warmer</a></h3>
+            <p class="item-meta">Color: Silver · In stock</p>
+            <div class="qty">
+              <button aria-label="Decrease quantity">−</button>
+              <span>2</span>
+              <button aria-label="Increase quantity">+</button>
+            </div>
+          </div>
+          <div class="cart-item-price"><strong>$39.98</strong></div>
+          <button class="remove" aria-label="Remove item">✕</button>
+        </div>
+
+        <a href="shop.html" class="continue-link">← Continue shopping</a>
+      </section>
+
+      <aside class="cart-summary" aria-label="Order summary">
+        <h2>Order summary</h2>
+        <dl>
+          <div><dt>Subtotal</dt><dd>$189.96</dd></div>
+          <div><dt>Shipping</dt><dd class="free">FREE</dd></div>
+          <div><dt>Discount (SPHERE10)</dt><dd>−$19.00</dd></div>
+          <div class="total"><dt>Total</dt><dd>$170.96</dd></div>
+        </dl>
+        <a href="checkout.html" class="btn btn-primary btn-block">Proceed to checkout</a>
+        <p class="secure-note">🔒 Secure 256-bit SSL encrypted checkout</p>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-bottom">© 2026 ShopSphere — demo UI. All prices are fictional.</div>
+  </footer>
+</body>
+</html>
