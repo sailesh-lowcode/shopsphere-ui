@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop — ShopSphere</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="topbar">Free shipping over $50 · 30-day returns · <strong>Spring sale: up to 40% off</strong></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo"><span class="logo-mark">S</span> Shop<span>Sphere</span></a>
+      <nav class="main-nav" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="shop.html" class="active">Shop</a>
+        <a href="shop.html">Deals</a>
+        <a href="product.html">Featured</a>
+      </nav>
+      <div class="header-actions">
+        <div class="search-box"><input type="search" placeholder="Search products…" aria-label="Search products" /></div>
+        <a href="#" class="icon-link" aria-label="Wishlist">♡</a>
+        <a href="cart.html" class="cart-link" aria-label="View cart">🛒 <span class="cart-badge">3</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container section">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a> / <span>Shop</span></nav>
+    <h1 class="page-title">All products</h1>
+    <p class="page-sub">Showing 9 of 670 products</p>
+
+    <div class="shop-layout">
+      <!-- ======= Filters ======= -->
+      <aside class="filters" aria-label="Product filters">
+        <div class="filter-group">
+          <h3>Categories</h3>
+          <label><input type="checkbox" checked /> Audio <small>(124)</small></label>
+          <label><input type="checkbox" /> Wearables <small>(86)</small></label>
+          <label><input type="checkbox" checked /> Home <small>(210)</small></label>
+          <label><input type="checkbox" /> Accessories <small>(158)</small></label>
+          <label><input type="checkbox" /> Tech <small>(92)</small></label>
+        </div>
+
+        <div class="filter-group">
+          <h3>Price</h3>
+          <label><input type="radio" name="price" /> Under $25</label>
+          <label><input type="radio" name="price" checked /> $25 – $75</label>
+          <label><input type="radio" name="price" /> $75 – $150</label>
+          <label><input type="radio" name="price" /> Over $150</label>
+        </div>
+
+        <div class="filter-group">
+          <h3>Rating</h3>
+          <label><input type="checkbox" /> ★★★★★ &amp; up</label>
+          <label><input type="checkbox" checked /> ★★★★☆ &amp; up</label>
+          <label><input type="checkbox" /> ★★★☆☆ &amp; up</label>
+        </div>
+
+        <button class="btn btn-outline btn-block">Apply filters</button>
+      </aside>
+
+      <!-- ======= Grid ======= -->
+      <section>
+        <div class="toolbar">
+          <span class="toolbar-label">Sort by:</span>
+          <select aria-label="Sort products">
+            <option>Most popular</option>
+            <option>Price: low to high</option>
+            <option>Price: high to low</option>
+            <option>Newest</option>
+          </select>
+          <span class="view-toggle" aria-label="View density">▦ ▤</span>
+        </div>
+
+        <div class="product-grid grid-3">
+          <article class="product-card">
+            <a class="product-thumb t-1" href="product.html"><span class="tag">-25%</span>🎧</a>
+            <div class="product-info">
+              <div class="stars">★★★★★ <small>4.8 (214)</small></div>
+              <h3><a href="product.html">SphereSound Pro Headphones</a></h3>
+              <div class="price"><span class="now">$89.99</span> <s>$119.99</s></div>
+              <button class="btn btn-primary btn-sm add-to-cart">Add to cart</button>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <a class="product-thumb t-2" href="product.html"><span class="tag">New</span>⌚</a>
+            <div class="product-info">
+              <div class="stars">★★★★★ <small>4.6 (98)</small></div>
+              <h3><a href="product.html">PulseFit Smart Watch</a></h3>
+              <div class="price"><span class="now">$129.00</span></div>
+              <button class="btn btn-primary btn-sm add-to-cart">Add to cart</button>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <a class="product-thumb t-3" href="product.html">🔊</a>
+            <div class="product-info">
+              <div class="stars">★★★★★ <small>4.7 (156)</small></div>
+              <h3><a href="product.html">BoomSphere Mini Speaker</a></h3>
+              <div class="price"><span class="now">$45.50</span></div>
+              <button class="btn btn-primary btn-sm add-to-cart">Add to cart</button>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <a class="product-thumb t-4" href="product.html"><span class="tag">-15%</span>🎒</a>
+            <div class="product-info">
+              <div class="stars">★★★★★ <small>4.9 (302)</small></div>
+              <h3><a href="product.html">TrekDay Backpack 24L</a></h3>
+              <div class="price"><span class="now">$59.99</span> <s>$69.99</s></div>
+              <button class="btn btn-primary btn-sm add-to-cart">Add to cart</button>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <a class="product-thumb t-5" href="product.html">🕶️</a>
+            <div class="product-info">
+              <div class="stars">★★★★★ <small>4.5 (77)</small></div>
+              <h3><a href="product.html">SolarShield Sunglasses</a></h3>
+              <div class="price"><span class="now">$24.00</span></div>
+              <button class="btn btn-primary btn-sm add-to-cart">Add to cart</button>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <a class="product-thumb t-6" href="product.html"><span class="tag">-30%</span>☕</a>
+            <div class="product-info">
+              <div class="stars">★★★★★ <small>4.8 (410)</small></div>
+              <h3><a href="product.html">BrewMaster Mug Warmer</a></h3>
+              <div class="price"><span class="now">$19.99</span> <s>$28.50</s></div>
+              <button class="btn btn-primary btn-sm add-to-cart">Add to cart</button>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <a class="product-thumb t-7" href="product.html">💡</a>
+            <div class="product-info">
+              <div class="stars">★★★★★ <small>4.4 (63)</small></div>
+              <h3><a href="product.html">LumiDesk LED Lamp</a></h3>
+              <div class="price"><span class="now">$34.75</span></div>
+              <button class="btn btn-primary btn-sm add-to-cart">Add to cart</button>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <a class="product-thumb t-8" href="product.html"><span class="tag">New</span>🖱️</a>
+            <div class="product-info">
+              <div class="stars">★★★★★ <small>4.7 (121)</small></div>
+              <h3><a href="product.html">GlideMouse Wireless</a></h3>
+              <div class="price"><span class="now">$29.99</span></div>
+              <button class="btn btn-primary btn-sm add-to-cart">Add to cart</button>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <a class="product-thumb t-9" href="product.html"><span class="tag">-20%</span>📷</a>
+            <div class="product-info">
+              <div class="stars">★★★★★ <small>4.6 (89)</small></div>
+              <h3><a href="product.html">SnapCam Pocket Camera</a></h3>
+              <div class="price"><span class="now">$149.00</span> <s>$185.00</s></div>
+              <button class="btn btn-primary btn-sm add-to-cart">Add to cart</button>
+            </div>
+          </article>
+        </div>
+
+        <div class="pagination">
+          <span class="page current">1</span>
+          <a class="page" href="#">2</a>
+          <a class="page" href="#">3</a>
+          <span>…</span>
+          <a class="page" href="#">12</a>
+          <a class="page next" href="#">Next →</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-bottom">© 2026 ShopSphere — demo UI. All prices are fictional.</div>
+  </footer>
+
+  <div class="toast" id="toast">Added to cart ✓</div>
+  <script src="script.js"></script>
+</body>
+</html>
