@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SphereSound Pro Headphones — ShopSphere</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="topbar">Free shipping over $50 · 30-day returns · <strong>Spring sale: up to 40% off</strong></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo"><span class="logo-mark">S</span> Shop<span>Sphere</span></a>
+      <nav class="main-nav" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="shop.html">Deals</a>
+        <a href="product.html" class="active">Featured</a>
+      </nav>
+      <div class="header-actions">
+        <div class="search-box"><input type="search" placeholder="Search products…" aria-label="Search products" /></div>
+        <a href="#" class="icon-link" aria-label="Wishlist">♡</a>
+        <a href="cart.html" class="cart-link" aria-label="View cart">🛒 <span class="cart-badge">3</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container section">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="index.html">Home</a> / <a href="shop.html">Shop</a> / <a href="shop.html">Audio</a> / <span>SphereSound Pro</span>
+    </nav>
+
+    <div class="product-page">
+      <!-- ======= Gallery ======= -->
+      <div class="gallery">
+        <div class="gallery-main t-1">🎧</div>
+        <div class="gallery-thumbs">
+          <button class="thumb t-1 active" aria-label="View image 1">🎧</button>
+          <button class="thumb t-7" aria-label="View image 2">🎧</button>
+          <button class="thumb t-3" aria-label="View image 3">🎧</button>
+          <button class="thumb t-9" aria-label="View image 4">🎧</button>
+        </div>
+      </div>
+
+      <!-- ======= Info ======= -->
+      <div class="product-detail">
+        <span class="tag">-25% limited time</span>
+        <h1>SphereSound Pro Wireless Headphones</h1>
+        <div class="stars big">★★★★★ <small>4.8 · 214 reviews · 2.1k sold</small></div>
+        <div class="price big"><span class="now">$89.99</span> <s>$119.99</s> <span class="save">Save $30</span></div>
+
+        <p class="detail-desc">
+          Immersive over-ear sound with adaptive noise cancellation, 40-hour battery life and
+          plush memory-foam cushions. Multipoint Bluetooth 5.3 pairs with two devices at once.
+        </p>
+
+        <div class="option-row">
+          <span class="option-label">Color:</span>
+          <div class="swatches" role="radiogroup" aria-label="Color">
+            <button class="swatch sw-midnight active" aria-label="Midnight"></button>
+            <button class="swatch sw-silver" aria-label="Silver"></button>
+            <button class="swatch sw-sand" aria-label="Sand"></button>
+          </div>
+        </div>
+
+        <div class="buy-row">
+          <div class="qty" aria-label="Quantity">
+            <button aria-label="Decrease quantity">−</button>
+            <span>1</span>
+            <button aria-label="Increase quantity">+</button>
+          </div>
+          <button class="btn btn-primary btn-lg add-to-cart">Add to cart</button>
+          <button class="btn btn-outline btn-lg" onclick="showToast('Demo UI — no backend 🙂')">Buy now</button>
+        </div>
+
+        <ul class="perks">
+          <li>🚚 Free shipping — arrives in 2–4 days</li>
+          <li>↩️ 30-day free returns</li>
+          <li>🛡️ 2-year warranty included</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ======= Tabs ======= -->
+    <div class="tabs" data-tabs>
+      <div class="tab-list" role="tablist">
+        <button class="tab active" role="tab">Description</button>
+        <button class="tab" role="tab">Specifications</button>
+        <button class="tab" role="tab">Reviews (214)</button>
+      </div>
+      <div class="tab-panel active">
+        <p>
+          SphereSound Pro delivers studio-grade audio with custom 40mm drivers and adaptive ANC that
+          tunes itself to your surroundings. Fold flat, toss in the case, and go — the battery lasts
+          40 hours (or 25 with ANC on), and a 10-minute quick charge adds 5 hours of playback.
+        </p>
+      </div>
+      <div class="tab-panel">
+        <table class="spec-table">
+          <tr><th>Drivers</th><td>40 mm dynamic, custom-tuned</td></tr>
+          <tr><th>Battery</th><td>40 h (ANC off) · 25 h (ANC on)</td></tr>
+          <tr><th>Bluetooth</th><td>5.3 with multipoint</td></tr>
+          <tr><th>Weight</th><td>254 g</td></tr>
+          <tr><th>In the box</th><td>Headphones, case, USB-C cable, 3.5mm cable</td></tr>
+        </table>
+      </div>
+      <div class="tab-panel">
+        <div class="review">
+          <div class="stars">★★★★★</div>
+          <strong>"Best headphones under $100"</strong>
+          <p>Anc is surprisingly good for this price. Battery genuinely lasts the full week of commutes.</p>
+          <small>— Maya R. · Verified purchase</small>
+        </div>
+        <div class="review">
+          <div class="stars">★★★★☆</div>
+          <strong>"Great sound, snug fit"</strong>
+          <p>Sound is warm and detailed. Fit is a bit tight on larger heads but loosens over time.</p>
+          <small>— Daniel K. · Verified purchase</small>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-bottom">© 2026 ShopSphere — demo UI. All prices are fictional.</div>
+  </footer>
+
+  <div class="toast" id="toast">Added to cart ✓</div>
+  <script src="script.js"></script>
+</body>
+</html>
