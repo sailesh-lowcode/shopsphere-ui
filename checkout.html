@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout — ShopSphere</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="topbar">Free shipping over $50 · 30-day returns · <strong>Spring sale: up to 40% off</strong></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo"><span class="logo-mark">S</span> Shop<span>Sphere</span></a>
+      <nav class="main-nav" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="shop.html">Deals</a>
+        <a href="product.html">Featured</a>
+      </nav>
+      <div class="header-actions">
+        <a href="cart.html" class="cart-link active" aria-label="View cart">🛒 <span class="cart-badge">3</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container section">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="index.html">Home</a> / <a href="cart.html">Cart</a> / <span>Checkout</span>
+    </nav>
+    <h1 class="page-title">Checkout</h1>
+    <p class="page-sub">Demo checkout — no data is sent anywhere.</p>
+
+    <!-- Steps indicator -->
+    <ol class="steps">
+      <li class="done">Cart</li>
+      <li class="current">Details &amp; payment</li>
+      <li>Confirmation</li>
+    </ol>
+
+    <form class="checkout-layout" onsubmit="event.preventDefault(); showToast('Demo UI — order not actually placed 🙂');">
+      <!-- ======= Form ======= -->
+      <div class="checkout-form">
+        <section class="form-card">
+          <h2>1 · Shipping address</h2>
+          <div class="form-grid">
+            <div class="field"><label for="fname">First name</label><input id="fname" required placeholder="Jane" /></div>
+            <div class="field"><label for="lname">Last name</label><input id="lname" required placeholder="Doe" /></div>
+            <div class="field span-2"><label for="email">Email</label><input id="email" type="email" required placeholder="jane@example.com" /></div>
+            <div class="field span-2"><label for="addr">Street address</label><input id="addr" required placeholder="123 Main St, Apt 4" /></div>
+            <div class="field"><label for="city">City</label><input id="city" required placeholder="San Francisco" /></div>
+            <div class="field"><label for="zip">ZIP / Postal code</label><input id="zip" required placeholder="94105" /></div>
+          </div>
+        </section>
+
+        <section class="form-card">
+          <h2>2 · Payment method</h2>
+          <div class="pay-options">
+            <label class="pay-option"><input type="radio" name="pay" checked /> 💳 Credit / debit card</label>
+            <label class="pay-option"><input type="radio" name="pay" /> 🅿️ PayPal</label>
+            <label class="pay-option"><input type="radio" name="pay" /> 🍎 Apple Pay</label>
+          </div>
+          <div class="form-grid">
+            <div class="field span-2"><label for="cardnum">Card number</label><input id="cardnum" placeholder="4242 4242 4242 4242" inputmode="numeric" /></div>
+            <div class="field"><label for="exp">Expiry</label><input id="exp" placeholder="MM / YY" /></div>
+            <div class="field"><label for="cvc">CVC</label><input id="cvc" placeholder="123" inputmode="numeric" /></div>
+          </div>
+        </section>
+      </div>
+
+      <!-- ======= Review ======= -->
+      <aside class="cart-summary" aria-label="Order review">
+        <h2>Order review</h2>
+        <div class="mini-item"><span class="mini-thumb t-1">🎧</span><div>SphereSound Pro Headphones × 1</div><strong>$89.99</strong></div>
+        <div class="mini-item"><span class="mini-thumb t-4">🎒</span><div>TrekDay Backpack 24L × 1</div><strong>$59.99</strong></div>
+        <div class="mini-item"><span class="mini-thumb t-6">☕</span><div>BrewMaster Mug Warmer × 2</div><strong>$39.98</strong></div>
+        <dl>
+          <div><dt>Subtotal</dt><dd>$189.96</dd></div>
+          <div><dt>Shipping</dt><dd class="free">FREE</dd></div>
+          <div><dt>Discount (SPHERE10)</dt><dd>−$19.00</dd></div>
+          <div class="total"><dt>Total</dt><dd>$170.96</dd></div>
+        </dl>
+        <button type="submit" class="btn btn-primary btn-block">Place order — $170.96</button>
+        <p class="secure-note">🔒 Demo checkout — nothing is charged or stored</p>
+      </aside>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-bottom">© 2026 ShopSphere — demo UI. All prices are fictional.</div>
+  </footer>
+
+  <div class="toast" id="toast">Order placed (demo) ✓</div>
+  <script src="script.js"></script>
+</body>
+</html>
